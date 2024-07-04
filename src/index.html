@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Powol :3</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <style>
+            .currentPlayer {
+                font-family: monospace;
+                font-size: 2rem;
+                text-align: center;
+            }    
+            .tableDiv {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .container {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .newGame {
+                height: 4rem;
+                display: flex;
+                padding-left: 4rem;
+            }
+            .newGameButton {
+                width: 10rem;
+                background-color: pink;
+                border-radius: 1rem;
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outerDiv" class="outerDiv">
+            <div id="tableDiv" class="tableDiv"></div>
+        </div>
+        <div class="container">
+            <div id="currentPlayerDiv">
+                <p id="currentPlayer" class="currentPlayer"></p>
+            </div>
+            <div class="newGame">
+                <button class="newGameButton" onClick="new_game()">new game</button>
+            </div>
+        </div>
+        
+    </body>
+    <script src="./script.js" type="text/javascript"></script>
+</html>
